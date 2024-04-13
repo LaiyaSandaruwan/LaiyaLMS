@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Content/MainTemplate.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="site_details">
+                <div class="site_logo">
+                    <img class="site_logo_image" src="~/Content/Temp_Images/logo.png" alt="" srcset="">
+                </div>
+                <div class="site_name">
+                    <label class="site_name_label" for="site">LMS-UoVT</label>
+                </div>
+            </div>
+            <div class="user_details">
+                <div class="user_name_text">
+                    <label class="user_name" for="user" id="user_name_id">User Name</label>
+                </div>
+                <div class="user_role_text">
+                    <label class="user_role" for="user" id="user_role_id">User Role</label>
+                </div>
+                <div class="user_details_image">
+                    <img class="user_image" src="~/Content/Temp_Images/user_image.png" id="user_icon_id" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div class="mid_container">
+            <div class="side_bar">
+
+            </div>
+            <div class="main_container">
+                @RenderBody()
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿body {
+    padding: 0; /* Remove padding from body */
+    margin: 0; /* Optional: Remove default margin as well */
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: #005980;
+    display: flex;
+}
+
+.side_bar {
+    width: 15%;
+}
+
+.main_container {
+    width: 85%;
+}
+
+.site_details {
+    display: flex;
+    width: 75%;
+    padding: 5px;
+}
+
+.site_logo {
+    margin-left: 5px;
+    background-color: white;
+    width: 25%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.site_logo_image {
+    width: 100px;
+    height: 60px;
+}
+
+.site_name {
+    width: 75%;
+    text-align: center;
+}
+
+.site_name_label {
+    font-size: 40px;
+    color: #fadabf;
+}
+
+.user_details {
+    display: flex;
+    text-align: center;
+    width: 25%;
+    font-size: 20px;
+    color: #fac495;
+}
+
+.user_name_text {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.user_role_text {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.user_details_image {
+    width: 20%;
+    margin-top: 5px;
+}
+
+.user_image {
+    width: 50px;
+}
+
+.mid_container {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.side_bar {
+    width: 20%;
+    height: 100vh;
+    background-color: #005980;
+}
+
+.main_container {
+    width: 80%;
+    background-color: #1792c3;
+    height: 100vh;
+    overflow: auto;
+}
