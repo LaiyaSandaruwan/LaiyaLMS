@@ -120,7 +120,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,8 +145,29 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\MainTemplate.css" />
-    <Content Include="Content\side_bar.css" />
+    <Content Include="Content\fontawesome\css\all.css" />
+    <Content Include="Content\fontawesome\css\all.min.css" />
+    <Content Include="Content\fontawesome\css\brands.css" />
+    <Content Include="Content\fontawesome\css\brands.min.css" />
+    <Content Include="Content\fontawesome\css\fontawesome.css" />
+    <Content Include="Content\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Content\fontawesome\css\regular.css" />
+    <Content Include="Content\fontawesome\css\regular.min.css" />
+    <Content Include="Content\fontawesome\css\solid.css" />
+    <Content Include="Content\fontawesome\css\solid.min.css" />
+    <Content Include="Content\fontawesome\css\svg-with-js.css" />
+    <Content Include="Content\fontawesome\css\svg-with-js.min.css" />
+    <Content Include="Content\fontawesome\css\v4-font-face.css" />
+    <Content Include="Content\fontawesome\css\v4-font-face.min.css" />
+    <Content Include="Content\fontawesome\css\v4-shims.css" />
+    <Content Include="Content\fontawesome\css\v4-shims.min.css" />
+    <Content Include="Content\fontawesome\css\v5-font-face.css" />
+    <Content Include="Content\fontawesome\css\v5-font-face.min.css" />
+    <Content Include="Content\css\LoginTemplate.css" />
+    <Content Include="Content\css\MainTemplate.css" />
+    <Content Include="Content\css\side_bar.css" />
+    <Content Include="Content\js\LoginScript.js" />
+    <Content Include="Content\js\mainPage.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -154,6 +177,14 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\fontawesome\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-v4compatibility.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -179,11 +210,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Temp_Images\" />
     <Folder Include="Models\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
