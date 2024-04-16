@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="~/Content/MainTemplate.css">
-    <link rel="stylesheet" href="~/Content/side_bar.css">
+    <title>UoVT-LMS-@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/css/MainTemplate.css">
+    <link rel="stylesheet" href="~/Content/css/side_bar.css">
+    <link href="~/Content/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome/css/solid.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="site_details">
-                <span style="font-size: 30px; cursor: pointer; color: white; padding-top: 5px; padding-left: 5px; padding-right: 5px" onclick="openNav()">&#9776;</span>
-                <div class="site_logo">
-                    <img class="site_logo_image" src="~/Content/Temp_Images/logo.png" alt="" srcset="">
+            <div class="site-details">
+                <div class="site-logo">
+                    <a href="/Home/Index">
+                        <img class="site_logo_image" src="~/Content/Temp_Images/logo.png" alt="" srcset="">
+                    </a>
                 </div>
-                <div class="site_name">
-                    <label class="site_name_label" for="site">LMS-UoVT</label>
+                <div class="site-name">
+                    <a class="site_name_label" href="/Home/Index">LMS-UoVT</a>
                 </div>
             </div>
-            <div class="user_details">
+            <div class="user-details">
                 <div class="user_name_text">
                     <label class="user_name" for="user" id="user_name_id">User Name</label>
                 </div>
@@ -31,34 +35,21 @@
                 </div>
             </div>
         </div>
-        <div class="side_bar" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Student Detials</a>
-            <a href="#">Teacher Details</a>
-            <a href="#">Course Details</a>
-            <a href="#">Class Details</a>
-            <a href="#">Batch Details</a>
-            <a href="#">Exam Details</a>
-            <a href="#">Result Details</a>
+    </div>
+    <div class="container">
+        <div class="side-bar">
+
+            <a href='/Student/Index'><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Student&nbsp;&nbsp;</a>
+            <a href="#"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Teacher&nbsp;&nbsp;</a>
+            <a href="#"><i class="fas fa-book-open"></i>&nbsp;&nbsp;Course&nbsp;&nbsp;</a>
+            <a href="#"><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Exam&nbsp;&nbsp;</a>
+            <a href="#"><i class="fas fa-book-reader"></i>&nbsp;&nbsp;Result&nbsp;&nbsp;</a>
         </div>
-        <div class="main_container">
+        <div class="main-container">
             @RenderBody()
         </div>
-        <div class="footer">
-
-        </div>
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
+    <script src="~/Content/js/mainPage.js"></script>
 
 </body>
 </html>

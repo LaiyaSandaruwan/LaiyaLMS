@@ -1,0 +1,82 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    background-color: #750a18;
+    color: #f9cf16;
+}
+.site-details {
+    width: 500px;
+    display: flex;
+}
+.site-logo {
+    width: 250px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site_logo_image{
+    width:100px;
+    height:45px;
+}
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.site_name_label {
+    font-size: 25px;
+    text-decoration: none;
+    color: #f9cf16;
+}
+.user-details {
+    flex-grow: 1;
+    display: flex;
+    float: right;
+}
+.user_name_text {
+    width: 70%;
+    margin-top: 20px;
+    text-align:right;
+}
+
+.user_role_text {
+    width: 20%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user_details_image {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_image {
+    width: 40px;
+}
+
+
+.side-bar {
+    width: 250px;
+    background-color: #750a18;
+    padding-top: 50px;
+    height: 100vh;
+}
+
+.main-container {
+    flex-grow: 1;
+    background-color: white;
+    padding:10px;
+}
