@@ -10,21 +10,20 @@
     <link href="~/Content/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="~/Content/fontawesome/css/solid.css" rel="stylesheet" />
 </head>
-<body onload="openNav()">
+<body>
     <div class="container">
         <div class="header">
-            <div class="site_details">
-                <span style="font-size: 30px; cursor: pointer; color: white; padding-top: 5px; padding-left: 5px; padding-right: 5px" onclick="openNav()">&#9776;</span>
-                <div class="site_logo">
+            <div class="site-details">
+                <div class="site-logo">
                     <a href="/Home/Index">
                         <img class="site_logo_image" src="~/Content/Temp_Images/logo.png" alt="" srcset="">
                     </a>
                 </div>
-                <div class="site_name">
+                <div class="site-name">
                     <a class="site_name_label" href="/Home/Index">LMS-UoVT</a>
                 </div>
             </div>
-            <div class="user_details">
+            <div class="user-details">
                 <div class="user_name_text">
                     <label class="user_name" for="user" id="user_name_id">User Name</label>
                 </div>
@@ -36,19 +35,18 @@
                 </div>
             </div>
         </div>
-        <div class="side_bar" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    <div class="container">
+        <div class="side-bar">
+
             <a href='/Student/Index'><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Student&nbsp;&nbsp;</a>
             <a href="#"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Teacher&nbsp;&nbsp;</a>
             <a href="#"><i class="fas fa-book-open"></i>&nbsp;&nbsp;Course&nbsp;&nbsp;</a>
             <a href="#"><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Exam&nbsp;&nbsp;</a>
             <a href="#"><i class="fas fa-book-reader"></i>&nbsp;&nbsp;Result&nbsp;&nbsp;</a>
         </div>
-        <div class="main_container" id="main_container_id">
+        <div class="main-container">
             @RenderBody()
-        </div>
-        <div class="footer">
-
         </div>
     </div>
     <script src="~/Content/js/mainPage.js"></script>

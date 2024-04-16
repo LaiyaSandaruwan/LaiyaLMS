@@ -1,101 +1,82 @@
 ﻿body {
-    padding: 0; /* Remove padding from body */
-    margin: 0; /* Optional: Remove default margin as well */
-    height: 100%;
-    background-color: #750a18;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-    width: 100%;
+    display: flex;
 }
 
 .header {
     width: 100%;
+    display: flex;
     background-color: #750a18;
+    color: #f9cf16;
+}
+.site-details {
+    width: 500px;
     display: flex;
 }
-
-.side_bar {
-    width: 15%;
-}
-
-.main_container {
-    width: 90%;
-    padding-left:5px;
-    margin-top:5px;
-    background-color:white;
-}
-
-.site_details {
-    display: flex;
-    width: 75%;
-    padding: 5px;
-    padding-left:20px
-}
-
-.site_logo {
-    margin-left: 5px;
+.site-logo {
+    width: 250px;
     background-color: white;
-    width: 25%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
-
-.site_logo_image {
-    width: 100px;
-    height: 50px;
+.site_logo_image{
+    width:100px;
+    height:45px;
 }
-
-.site_name {
-    width: 75%;
+.site-name {
+    flex-grow: 1;
     text-align: center;
+    padding-top: 10px;
+    
 }
-
 .site_name_label {
-    font-size: 40px;
-    color: #F7C566;
+    font-size: 25px;
     text-decoration: none;
+    color: #f9cf16;
 }
-
-.user_details {
+.user-details {
+    flex-grow: 1;
     display: flex;
-    text-align: center;
-    width: 25%;
-    font-size: 20px;
-    color: #F7C566;
-    padding-right:20px;
+    float: right;
 }
-
 .user_name_text {
-    width: 50%;
+    width: 70%;
     margin-top: 20px;
+    text-align:right;
 }
 
 .user_role_text {
-    width: 30%;
+    width: 20%;
     margin-top: 20px;
+    text-align: center;
 }
 
 .user_details_image {
-    width: 20%;
-    margin-top: 5px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .user_image {
-    width: 50px;
+    width: 40px;
 }
 
 
-
-.side_bar {
-    width: 20%;
+.side-bar {
+    width: 250px;
+    background-color: #750a18;
+    padding-top: 50px;
     height: 100vh;
-    background-color: #005980;
 }
 
-.main_container {
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
+.main-container {
+    flex-grow: 1;
+    background-color: white;
+    padding:10px;
 }
