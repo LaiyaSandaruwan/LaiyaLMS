@@ -1,22 +1,28 @@
-﻿.side-bar a {
-    padding: 8px 8px 8px 32px;
+﻿
+.side-bar a {
+    padding: 8px 8px 8px 38px;
     text-decoration: none;
     font-size: 15px;
     color: #fac495;
     display: block;
     transition: 0.3s;
 }
+.side-bar.expanded {
+    width: 250px;
+    background-color: #750a18;
+    padding-top: 10px;
+    height: 100vh;
+}
+
+.side-bar.collapsed {
+    width: 50px;
+    background-color: #750a18;
+    padding-top: 10px;
+    height: 100vh;
+}
 
 .side-bar a:hover {
     color: #f1f1f1;
-}
-
-.side-bar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
 
 #main {
@@ -24,12 +30,18 @@
     padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
-    .side-bar {
-        padding-top: 15px;
-    }
+.side-bar-close {
+    padding-left: 200px;
+    font-size: 35px;
+    color: #fac495;
+}
 
-        .side-bar a {
-            font-size: 18px;
-        }
+.side-bar-open {
+    padding-left: 10px;
+    font-size: 35px;
+    color: #fac495;
+    display: none;
+}
+.side-bar-link-desc{
+    width:150px;
 }

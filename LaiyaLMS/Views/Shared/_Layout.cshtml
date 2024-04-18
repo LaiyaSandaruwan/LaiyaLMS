@@ -10,7 +10,7 @@
     <link href="~/Content/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="~/Content/fontawesome/css/solid.css" rel="stylesheet" />
 </head>
-<body>
+<body onload="formload()">
     <div class="container">
         <div class="header">
             <div class="site-details">
@@ -30,20 +30,61 @@
                 <div class="user_role_text">
                     <label class="user_role" for="user" id="user_role_id">User Role</label>
                 </div>
+                <div class="notification_div">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
                 <div class="user_details_image">
                     <img class="user_image" src="~/Content/Temp_Images/user_image.png" id="user_icon_id" alt="" srcset="">
+                </div>
+                <div class="sign_out_div" onclick="sign_out()">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="side-bar">
-
-            <a href='/Student/Index'><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Student&nbsp;&nbsp;</a>
-            <a href="#"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Teacher&nbsp;&nbsp;</a>
-            <a href="#"><i class="fas fa-book-open"></i>&nbsp;&nbsp;Course&nbsp;&nbsp;</a>
-            <a href="#"><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Exam&nbsp;&nbsp;</a>
-            <a href="#"><i class="fas fa-book-reader"></i>&nbsp;&nbsp;Result&nbsp;&nbsp;</a>
+        <div class="side-bar" id="side-bar-id">
+            <div id="side-bar-open-id" class="side-bar-open" onclick="open_nav()">
+                <i class="fa fa-arrow-circle-right"></i>
+            </div>
+            <div id="side-bar-close-id" class="side-bar-close" onclick="close_nav()">
+                <i class="fa fa-arrow-circle-left"></i>
+            </div>
+            <a class="side-bar-link" href='/Student/Index'>
+                <i class="fa-solid fa-user"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Student</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-user-graduate"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Teacher</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-book-open"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Course</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-laptop-code"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Exam</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-book-reader"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Result</div>
+            </a>
+            <br /><br />
+            <a class="side-bar-link" href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Notifications</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Sign Out</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <img class="user_image" src="~/Content/Temp_Images/user_image.png" id="user_icon_id" alt="" srcset="">
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">User Name</div>
+            </a>
+                
+            </div>
         </div>
         <div class="main-container">
             @RenderBody()

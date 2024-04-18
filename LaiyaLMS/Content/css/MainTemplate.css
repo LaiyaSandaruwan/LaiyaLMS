@@ -23,10 +23,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom:5px;
 }
 .site_logo_image{
     width:100px;
-    height:45px;
+    height:40px;
 }
 .site-name {
     flex-grow: 1;
@@ -45,7 +46,7 @@
     float: right;
 }
 .user_name_text {
-    width: 70%;
+    width: 65%;
     margin-top: 20px;
     text-align:right;
 }
@@ -57,26 +58,54 @@
 }
 
 .user_details_image {
-    width: 10%;
+    width: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.sign_out_div {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.notification_div {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
 
 .user_image {
-    width: 40px;
+    width: 35px;
 }
 
-
-.side-bar {
-    width: 250px;
-    background-color: #750a18;
-    padding-top: 50px;
-    height: 100vh;
-}
 
 .main-container {
     flex-grow: 1;
     background-color: white;
     padding:10px;
+}
+
+@media screen and (max-width: 600px) {
+    .user-details {
+        visibility: hidden;
+    }
+    .header {
+        display: flex;
+        background-color: #750a18;
+        color: #f9cf16;
+    }
+}
+
+.sign_out_div:hover {
+    color:white;
+}
+.notification_div:hover {
+    color: white;
+}
+.user_image:hover {
+    opacity: 0.5;
 }
