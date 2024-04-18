@@ -69,22 +69,22 @@
             <a class="side-bar-link" href="#">
                 <i class="fas fa-book-reader"></i>
                 <div id="side_bar_link_desc_id" class="side-bar-link-desc">Result</div>
-            </a>
-            <br /><br />
-            <a class="side-bar-link" href="#">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Notifications</div>
-            </a>
-            <a class="side-bar-link" href="#">
-                <i class="fa fa-sign-in" aria-hidden="true"></i>
-                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Sign Out</div>
-            </a>
-            <a class="side-bar-link" href="#">
-                <img class="user_image" src="~/Content/Temp_Images/user_image.png" id="user_icon_id" alt="" srcset="">
-                <div id="side_bar_link_desc_id" class="side-bar-link-desc">User Name</div>
-            </a>
+            </a><br /><br />
+                      <div class="side-bar-actions">
+                          <a class="side-bar-link" href="#">
+                              <i class="fa fa-envelope" aria-hidden="true"></i>
+                              <div id="side_bar_link_desc_id" class="side-bar-link-desc">Notifications</div>
+                          </a>
+                          <a class="side-bar-link" href="#">
+                              <i class="fa fa-sign-in" aria-hidden="true"></i>
+                              <div id="side_bar_link_desc_id" class="side-bar-link-desc">Sign Out</div>
+                          </a>
+                          <a class="side-bar-link" href="#">
+                              <img class="user_image_side_bar" src="~/Content/Temp_Images/user_image.png" id="user_icon_id" alt="" srcset="">
+                              <div id="side_bar_link_desc_id" class="side-bar-link-desc">User Name</div>
+                          </a>
+                      </div>
                 
-            </div>
         </div>
         <div class="main-container">
             @RenderBody()

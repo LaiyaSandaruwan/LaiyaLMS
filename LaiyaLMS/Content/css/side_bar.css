@@ -7,6 +7,8 @@
     display: block;
     transition: 0.3s;
 }
+
+
 .side-bar.expanded {
     width: 250px;
     background-color: #750a18;
@@ -41,6 +43,11 @@
     font-size: 35px;
     color: #fac495;
     display: none;
+}
+
+.side-bar-close:hover,
+.side-bar-open:hover{
+    color:white;
 }
 .side-bar-link-desc{
     width:150px;

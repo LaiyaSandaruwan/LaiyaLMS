@@ -1,5 +1,5 @@
 ﻿function formload() {
-    open_nav()
+    close_nav()
 }
 function close_nav() {
     var sideBar = document.getElementById('side-bar-id');
