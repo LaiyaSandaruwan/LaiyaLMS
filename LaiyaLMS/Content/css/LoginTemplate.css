@@ -33,11 +33,11 @@
     box-sizing: border-box;
 }
 
-    .login-container input[type="submit"] {
-        background-color: #750a18;
-        color: white;
-        cursor: pointer;
-    }
+.login-container input[type="submit"] {
+    background-color: #750a18;
+    color: white;
+    cursor: pointer;
+}
 
         .login-container input[type="submit"]:hover {
             background-color: #520711;

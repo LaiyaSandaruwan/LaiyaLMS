@@ -11,6 +11,12 @@ namespace LaiyaLMS.Controllers
         // GET: Account
         public ActionResult Index()
         {
+            //Login Screen
+            return View();
+        }
+
+        public ActionResult FogotPassword()
+        {
             return View();
         }
     }

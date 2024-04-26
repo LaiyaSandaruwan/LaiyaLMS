@@ -118,6 +118,10 @@
     .site-name{
         width:200px;
     }
+    .user-details {
+        display:none;
+        width:0px;
+    }
 }
 
 .sign_out_div:hover {
